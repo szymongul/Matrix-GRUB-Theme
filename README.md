@@ -28,7 +28,10 @@ A full-screen, high-resolution GRUB theme inspired by The Matrix. It uses the "G
 3.  **Edit `40_custom`:**
     Open the file and replace the placeholders: `YOUR_LINUX_UUID` and `YOUR_WINDOWS_EFI_UUID` with your actual UUIDs.
 
-4.  **Run the Installer:**
+4.  **Make installer executable**
+    Run `chmod +x ./installer.sh` command
+    
+5.  **Run the Installer:**
     ```bash
     sudo ./installer.sh
     ```
@@ -39,4 +42,4 @@ A full-screen, high-resolution GRUB theme inspired by The Matrix. It uses the "G
     * Update `/etc/default/grub`.
     * Generate a new `grub.cfg`.
 
-5.  **Reboot** and enjoy the theme!
+6.  **Reboot** and enjoy the theme!
