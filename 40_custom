@@ -7,7 +7,7 @@ exec tail -n +3 $0
 # 2. YOUR_WINDOWS_EFI_UUID: Windows EFI partition UUID (e.g., 54C8-DC44)
 
 # =============================
-# ARCH / ENDEAVOUROS - Red Pill (Icon: os_arch.png)
+# CACHYOS - Red Pill (Icon: os_arch.png)
 # =============================
 menuentry "Arch Linux" --class os_arch {
     load_video
@@ -20,10 +20,10 @@ menuentry "Arch Linux" --class os_arch {
     search --no-floppy --fs-uuid --set=root YOUR_LINUX_UUID
     
     echo    'Loading Linux kernel...' 
-    linux   /boot/vmlinuz-linux root=UUID=YOUR_LINUX_UUID rw
+    linux   /boot/vmlinuz-linux-cachyos root=UUID=YOUR_LINUX_UUID rw
     
     echo    'Loading initial ramdisk...' 
-    initrd  /boot/initramfs-linux.img
+    initrd  /boot/initramfs-linux-cachyos.img
 }
 
 # =============================
